@@ -40,10 +40,3 @@ for (int i = 0; i < iterations; i++)
 }
 stopwatch.Stop();
 Console.WriteLine($"Newtonsoft.Json: Deserialization of {iterations} iterations took {stopwatch.ElapsedMilliseconds} ms");
-
-
-Console.WriteLine("----------------------------------------------");
-Console.WriteLine("Student serialization:");
-var student = new Student("Max", 22);
-var studentCsv = CsvSerializer.Serialize(student);
-Console.WriteLine(studentCsv); 
